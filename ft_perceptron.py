@@ -11,8 +11,9 @@ import source.configurations as conf
 
 def read_dataset(path):
     df = pd.read_csv(path)
-    X = df.iloc[:, 2:].values
-    y = df.iloc[:, 1].map({'M': 1, 'B': 0}).values
+    df.columns = list(df.iloc[0,:])
+    X = df.iloc[:, :-1].values
+    y = df.iloc[:, -1].values
     return X, y
 
 
