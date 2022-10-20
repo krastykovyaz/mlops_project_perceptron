@@ -1,1 +1,1 @@
-python3 ../ft_perceptron.py
+python3 ../ft_perceptron.py --predict
