@@ -1,8 +1,8 @@
-# В работе реализован однослойный линейный классификатор - перцептрон. Для начала необходимо установить библиотеки из папки requirements.txt
-# Реализованы следующие флаги при запуске: +1
-# usage: ft_perceptron.py [-h] [-t] [-p] [--plot] [--valid-size VALID_SIZE] [-lr LEARNING_RATE] [-e EPOCHS]
-#                         [--batch-size BATCH_SIZE] [--train-path TRAIN_PATH] [--test-path TEST_PATH]
-# optional arguments:
+ В работе реализован однослойный линейный классификатор - перцептрон. Для начала необходимо установить библиотеки из папки requirements.txt <br />
+ Реализованы следующие флаги при запуске: +1 <br />
+ usage: ft_perceptron.py [-h] [-t] [-p] [--plot] [--valid-size VALID_SIZE] [-lr LEARNING_RATE] [-e EPOCHS] <br />
+                         [--batch-size BATCH_SIZE] [--train-path TRAIN_PATH] [--test-path TEST_PATH] <br />
+ optional arguments:
   -h, --help            show this help message and exit
   -t, --train           train mode
   -p, --predict         predict mode
