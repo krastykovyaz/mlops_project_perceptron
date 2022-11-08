@@ -1,8 +1,8 @@
-В работе реализован однослойный линейный классификатор - перцептрон. Для начала необходимо установить библиотеки из папки requirements.txt
-Реализованы следующие флаги при запуске: +1
-usage: ft_perceptron.py [-h] [-t] [-p] [--plot] [--valid-size VALID_SIZE] [-lr LEARNING_RATE] [-e EPOCHS]
-                        [--batch-size BATCH_SIZE] [--train-path TRAIN_PATH] [--test-path TEST_PATH]
-optional arguments:
+# В работе реализован однослойный линейный классификатор - перцептрон. Для начала необходимо установить библиотеки из папки requirements.txt
+# Реализованы следующие флаги при запуске: +1
+# usage: ft_perceptron.py [-h] [-t] [-p] [--plot] [--valid-size VALID_SIZE] [-lr LEARNING_RATE] [-e EPOCHS]
+#                         [--batch-size BATCH_SIZE] [--train-path TRAIN_PATH] [--test-path TEST_PATH]
+# optional arguments:
   -h, --help            show this help message and exit
   -t, --train           train mode
   -p, --predict         predict mode
@@ -43,7 +43,7 @@ Json файл с весами и pkl модедью загружается в п
 # 11. ----- Напишите кастомный трансформер и протестируйте его (3 балла) https://towardsdatascience.com/pipelines-custom-transformers-in-scikit-learn-the-step-by-step-guide-with-python-code-4a7d9b068156
 # 12. ----- В проекте зафиксированы все зависимости (1 балл)
 # 13. ----- Настроен CI для прогона тестов, линтера на основе github actions (3 балла). Пример с пары: https://github.com/demo-ml-cicd/ml-python-package
-# 14. Залогируйте метрики
+14. Залогируйте метрики
 Метрики логируюся в файл file.log +1
 
 
