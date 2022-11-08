@@ -1,10 +1,10 @@
-``` 
-	В работе реализован однослойный линейный классификатор - перцептрон. Для начала необходимо установить библиотеки из папки requirements.txt>
-``` 
-Реализованы следующие флаги при запуске: +1 <br />
- usage: ft_perceptron.py [-h] [-t] [-p] [--plot] [--valid-size VALID_SIZE] [-lr LEARNING_RATE] [-e EPOCHS]
-                         [--batch-size BATCH_SIZE] [--train-path TRAIN_PATH] [--test-path TEST_PATH]
- optional arguments:
+
+ В работе реализован однослойный линейный классификатор - перцептрон. Для начала необходимо установить библиотеки из папки requirements.txt><br />
+ Реализованы следующие флаги при запуске: +1 <br />
+ usage: ft_perceptron.py [-h] [-t] [-p] [--plot] [--valid-size VALID_SIZE] [-lr LEARNING_RATE] [-e EPOCHS]<br />
+                         [--batch-size BATCH_SIZE] [--train-path TRAIN_PATH] [--test-path TEST_PATH]<br />
+ optional arguments:<br />
+```  
   -h, --help            show this help message and exit
   -t, --train           train mode
   -p, --predict         predict mode
@@ -19,6 +19,7 @@
                         train dataset filename
   --test-path TEST_PATH, --test-filename TEST_PATH
                         test dataset filename
+```
 Проект полностью логируется в режимах обучения и тестирования. 
 Также реализован режим отображения изменения loss во время обучения. +1
 Также во время обучения можно остановить процесс, что позволит сохранить модель с текущими весами. То есть это остановит процесс обучения, но при этом не сломает саму модель. +1
