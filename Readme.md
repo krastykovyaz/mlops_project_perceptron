@@ -4,20 +4,22 @@ usage: ft_perceptron.py ```[-h] [-t] [-p] [--plot] [--valid-size VALID_SIZE] [-l
                         [--batch-size BATCH_SIZE] [--train-path TRAIN_PATH] [--test-path TEST_PATH]```
 optional arguments:
 
-  ```-h, --help            show this help message and exit```
-  ```-t, --train           train mode```
-  ```-p, --predict         predict mode```
-  ```--plot                visualization```
-  ```--valid-size VALID_SIZE```
-                        ```split validation size (0-1)```
-  ```-lr LEARNING_RATE, --learning-rate LEARNING_RATE```
-  ```-e EPOCHS, --epochs EPOCHS```
-                        ```number epochs```
-  ```--batch-size BATCH_SIZE```
-  ```--train-path TRAIN_PATH, --train-filename TRAIN_PATH```
-                        ```train dataset filename```
-  ```--test-path TEST_PATH, --test-filename TEST_PATH```
-                        ```test dataset filename```
+```
+  -h, --help            show this help message and exit
+  -t, --train           train mode
+  -p, --predict         predict mode
+  --plot                visualization
+  --valid-size VALID_SIZE
+                        split validation size (0-1)
+  -lr LEARNING_RATE, --learning-rate LEARNING_RATE
+  -e EPOCHS, --epochs EPOCHS
+                        ```number epochs
+  --batch-size BATCH_SIZE
+  --train-path TRAIN_PATH, --train-filename TRAIN_PATH
+                        ```train dataset filename
+  --test-path TEST_PATH, --test-filename TEST_PATH
+                        test dataset filename
+```
 Проект полностью логируется в режимах обучения и тестирования.<br />
 Также реализован режим отображения изменения loss во время обучения. ```+1```<br />
 Также во время обучения можно остановить процесс, что позволит сохранить модель с текущими весами. То есть это остановит процесс обучения, но при этом не сломает саму модель. ```+1```<br />
@@ -36,14 +38,14 @@ python3 ft_perceptron.py или в корне ./train.sh ```+3```<br />
 python3 ft_perceptron.py --predict или в корне ./test.sh ```+3```<br />
 5. Проект имеет модульную структуру ```+2```<br />
 6. Использованы логгеры. Все процессы логируются в файл file.log ```+2```<br />
-# 7. ------ Написаны тесты на отдельные модули и на прогон обучения и predict (3 балла)<br />
-# 8. ------ Для тестов генерируются синтетические данные, приближенные к реальным (2 балла)<br />
+# 7. ~~Написаны тесты на отдельные модули и на прогон обучения и predict (3 балла)~~<br />
+# 8. ~~Для тестов генерируются синтетические данные, приближенные к реальным (2 балла)~~<br />
 9. Обучение модели конфигурируется с помощью конфигов в json или yaml, закоммитьте как минимум 2 корректные конфигурации, с помощью которых можно обучить модель (разные модели, стратегии split, preprocessing)<br />
 Json файл с весами и pkl модедью загружается в папку data в файл в папке data model.json. ```+3```<br />
-# 10. ----- Используются датаклассы для сущностей из конфига, а не голые dict (2 балла)<br />
-# 11. ----- Напишите кастомный трансформер и протестируйте его (3 балла) https://towardsdatascience.com/pipelines-custom-transformers-in-scikit-learn-the-step-by-step-guide-with-python-code-4a7d9b068156<br />
-# 12. ----- В проекте зафиксированы все зависимости (1 балл)<br />
-# 13. ----- Настроен CI для прогона тестов, линтера на основе github actions (3 балла). Пример с пары: https://github.com/demo-ml-cicd/ml-python-package<br />
+# 10. ~~Используются датаклассы для сущностей из конфига, а не голые dict (2 балла)~~<br />
+# 11. ~~Напишите кастомный трансформер и протестируйте его (3 балла) https://towardsdatascience.com/pipelines-custom-transformers-in-scikit-learn-the-step-by-step-guide-with-python-code-4a7d9b068156~~<br />
+# 12. ~~В проекте зафиксированы все зависимости (1 балл)~~<br />
+# 13. ~~Настроен CI для прогона тестов, линтера на основе github actions (3 балла). Пример с пары: https://github.com/demo-ml-cicd/ml-python-package~~<br />
 # 14. Залогируйте метрики<br />
 Метрики логируюся в файл file.log ```+1```<br />
 
